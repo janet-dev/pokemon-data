@@ -22,9 +22,10 @@ try:
             pokemon_ids.append(retrieve)
             # list.append(element) i.e. add 'retrieve' to 'pokemon_ids' list
         else:
-            print('Invalid ID')
+            print('Invalid ID - out of range!')
 except ValueError:
-    print('Invalid ID')
+    # checking if user inputted anything other than an integer: string, space or return
+    print('Invalid ID - not an integer!')
 
 for pokemon in pokemon_ids:
     # get info on the 6 pokemon
